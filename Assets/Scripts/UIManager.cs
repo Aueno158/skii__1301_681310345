@@ -49,4 +49,10 @@ public class UIManager : MonoBehaviour
     {
         restartButton.SetActive(flag);
     }
+
+    public void Exit()
+    {
+        ShowHideRestartButton(false);
+        Application.Quit();
+    }
 }

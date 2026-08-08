@@ -20,5 +20,6 @@ public class Finish : MonoBehaviour
         if (player == null) 
             return;
         UIManager.Instance.ShowNotiText($"YOU WIN LMAO \nHP : {player.Hp}, Points : {player.Point}");
+        Time.timeScale = 0f;
     }
 }
