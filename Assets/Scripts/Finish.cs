@@ -19,6 +19,6 @@ public class Finish : MonoBehaviour
         Player player = other.gameObject.GetComponent<Player>();
         if (player == null) 
             return;
-        UIManager.Instance.ShowNotiText($"YOU WIN LMAO \nHP : {player.Hp}");
+        UIManager.Instance.ShowNotiText($"YOU WIN LMAO \nHP : {player.Hp}, Points : {player.Point}");
     }
 }
