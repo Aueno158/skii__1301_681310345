@@ -10,6 +10,7 @@ public class Flag : MonoBehaviour
         if (player == null)
             return;
         player.Point += 10;
+        SoundManager.Instance.PlayCollectibleSound();
         UIManager.Instance.ShowNotiText($"+10 Points \npoints : {player.Point}");
             Destroy(gameObject);
     }

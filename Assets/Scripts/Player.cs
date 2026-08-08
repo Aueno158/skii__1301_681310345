@@ -42,10 +42,17 @@ public class Player : MonoBehaviour
     void Update()
     {
         MoveLeftorRight();
+        MoveBehindtoFornt();
     }
     private void MoveLeftorRight()
     {
         moveValue = moveAction.ReadValue<Vector2>();
         rb.AddForce(moveValue.x *Vector3.right * forcePower);
+    }
+
+    private void MoveBehindtoFornt()
+    {
+        moveValue = moveAction.ReadValue<Vector2>();
+        rb.AddForce(moveValue.y *Vector3.forward * forcePower);
     }
 }

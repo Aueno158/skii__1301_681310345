@@ -2,7 +2,10 @@ using UnityEngine;
 
 public class Finish : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+   [SerializeField] 
+   private GameObject gameOverScreen;
+
+   public static Finish Instance;
     void Start()
     {
         
@@ -13,7 +16,7 @@ public class Finish : MonoBehaviour
     {
         
     }
-
+    
     private void OnTriggerEnter(Collider other)
     {
         Player player = other.gameObject.GetComponent<Player>();
@@ -22,4 +25,11 @@ public class Finish : MonoBehaviour
         UIManager.Instance.ShowNotiText($"YOU WIN LMAO \nHP : {player.Hp}, Points : {player.Point}");
         Time.timeScale = 0f;
     }
+
+    public void ShowHideGameOverScreen(bool flag)
+    {
+        gameOverScreen.SetActive(flag);
+        return;
+    }
+
 }

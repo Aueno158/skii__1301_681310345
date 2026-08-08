@@ -11,5 +11,6 @@ AssetOrigin:
   productId: 284699
   packageName: 3D Stylized Animated Dogs Kit
   packageVersion: 1.0
-  assetPath: Assets/Bublisher/3D Stylized Animated Dogs Kit/Animator Controllers/CurOverrideController.overrideController
+  assetPath: Assets/Asset_Import/Bublisher/3D Stylized Animated Dogs Kit/Animator
+    Controllers/CurOverrideController.overrideController
   uploadId: 663182
